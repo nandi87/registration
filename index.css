@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #FF00E4;
+    font-family: "Nunito Sans",sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.container{
+    margin: 50px;
+     max-width: 600px;
+     width: 100%;
+     background-color: #fff;
+     padding: 25px 30px;
+     border-radius: 10px;
+     margin-bottom: 50px;
+}
+.container .regestration{
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.regestration h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+span{
+    color:#0615B4;
+}
+.container .regestration::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: liner-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container form .form-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 14px 0;
+}
+
+form .form-details .details{
+    margin-bottom: 10px;
+    width: calc(100% / 2 - 20px);
+}
+
+.form-details .details h1{
+    display: block;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.form-details .details input{
+     height: 40px;
+     width: 100%;
+     outline: none;
+     border-radius: 5px;
+     border: 1px solid#ccc;
+     padding-left: 15px;
+     font-size: 14px;
+     border-bottom-width: 2px;
+     transition: all 0.3s ease;
+     margin-bottom: 5px;
+}
+.form-details .details input:focus
+.form-details .details input:valid{
+    border-color: #9b59b6;
+}
+
+form .Gender-details h5 {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 10px;
+}
+
+form .Gender-details .Gender-details h6 input{
+    display: flex;
+    width: 80%;
+    margin: 24px;
+    justify-content: space-between;
+}
+.Gender-details h6 input{
+    margin-bottom: 20px;
+}
+
+#dot-1:checked ~ .Gender-details input {
+    background-color: #FF00E4;
+}
+
+form .button{
+    display: flex;
+    height: 45px;
+    margin: 10px 0;
+}
+form .button input{
+    height: 100%;
+    width: 60%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 100px;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
+form .button input:hover{
+    background-color: #FF00E4;
+}
+
+@media (max-width: 584px) {
+    .container{
+        max-width: 100%;
+    }
+    form .form-details .details{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    form .Gender-details .Gender-details h6 input{
+        width: 100%;
+    }
+    .container form .form-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .form-details::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
+
+
+
